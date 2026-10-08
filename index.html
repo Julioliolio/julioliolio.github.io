@@ -1,0 +1,28 @@
+<!doctype html>
+<!--
+  julioliolio.github.io only forwards: the portfolio moved to julioliolio.com
+  (its repo, Julioliolio/portfolio, is private and builds on Cloudflare).
+  The same page is index.html, portfolio/index.html and 404.html, so every
+  old link, julioliolio.github.io/portfolio/work/camper/ included, lands on
+  the same path at julioliolio.com.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Julio Romero</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://julioliolio.com/" />
+    <script>
+      location.replace(
+        "https://julioliolio.com" +
+          location.pathname.replace(/^\/portfolio(?=\/|$)/, "") +
+          location.search +
+          location.hash,
+      );
+    </script>
+    <meta http-equiv="refresh" content="0; url=https://julioliolio.com/" />
+  </head>
+  <body>
+    <p>Moved to <a href="https://julioliolio.com/">julioliolio.com</a>.</p>
+  </body>
+</html>
